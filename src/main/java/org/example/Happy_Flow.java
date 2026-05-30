@@ -1,9 +1,9 @@
-////import org.openqa.selenium.By;
+package org.example; ////import org.openqa.selenium.By;
 ////import org.openqa.selenium.WebDriver;
 ////import org.openqa.selenium.chrome.ChromeDriver;
 ////import org.openqa.selenium.edge.EdgeDriver;
 ////
-////public class Happy_Flow {
+////public class org.example.Happy_Flow {
 ////
 ////    public static void main(String[] args)throws InterruptedException {
 ////
@@ -25,7 +25,7 @@
 //import org.openqa.selenium.support.ui.ExpectedConditions;
 //import java.time.Duration;
 //
-//public class Happy_Flow {
+//public class org.example.Happy_Flow {
 //    public static void main(String[] args)throws InterruptedException {
 //
 //        WebDriver driver = new ChromeDriver();
