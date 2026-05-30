@@ -12,6 +12,6 @@ public class Demo {
         WebDriver driver=new ChromeDriver();
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 
-    }
 
+    }
 }
