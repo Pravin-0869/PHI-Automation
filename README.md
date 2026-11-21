@@ -1,117 +1,75 @@
 # PHI Automation
 
-Automation testing project for the Prudential Health Insurance (PHI) application.
+Selenium WebDriver automation project for testing the Prudential Health Insurance (PHI) application.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - Java
 - Selenium WebDriver
 - TestNG
 - Maven
-- IntelliJ IDEA
-- ChromeDriver
-- Git
-- GitHub
+- Page Object Model (POM)
+- Git & GitHub
 
-## Project Purpose
+## 🔄 Automation Flow
 
-This project is created to automate functional and regression testing of the PHI application using Selenium WebDriver with Java.
+**Agent Login → Agent Onboarding → Quote Generation → Customer Details → KYC → Proposal → Insurer Details → Nominee → Medical Questions → Summary → Payment → Thank You**
 
-## Testing Areas
+## 📌 Key Testing Areas
 
-- Agent Login
-- Agent Onboarding
+- Agent Login & Onboarding
 - Quote Generation
-- Customer Details
-- KYC
-- Proposal
-- Insurer Details
+- KYC Validation
+- Proposal & Insurer Details
 - Nominee Details
 - Medical Questions
-- Summary
-- Payment
-- Thank You Page
+- Summary & Premium Validation
+- Payment Flow
+- End-to-End Regression Testing
 
-## Automation Framework
+## ▶️ How to Run
 
-The project follows the Page Object Model (POM) approach.
+### 1. Clone the repository
 
-### Main Components
-
-- Test Classes
-- Page Objects
-- Test Data
-- Utilities
-- TestNG
-- Maven
-- Configuration
-- Reports
-
-## Prerequisites
-
-Make sure the following are installed:
-
-- Java JDK
-- Maven
-- IntelliJ IDEA
-- Google Chrome
-- ChromeDriver
-- Git
-
-## Installation
-
-Clone the repository:
-
+```bash
 git clone <your-repository-url>
+```
 
-Go to the project folder:
+### 2. Open the project
 
-cd PHI-Automation
+Open the project in **IntelliJ IDEA**.
 
-Install Maven dependencies:
+### 3. Install Maven dependencies
 
+```bash
 mvn clean install
+```
 
-## Run Tests
+### 4. Run automation tests
 
-Run all tests using Maven:
-
+```bash
 mvn test
+```
 
-Run tests from IntelliJ IDEA using TestNG.
+You can also run the tests using **TestNG** from IntelliJ IDEA.
 
-## Test Reports
+## 📂 Framework Structure
 
-Test execution reports can be generated after the test execution depending on the reporting configuration used in the project.
-
-## Project Structure
-
-PHI-Automation/
+```text
+PHI-Automation
 │
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       ├── pages/
-│   │       └── utilities/
-│   │
-│   └── test/
-│       └── java/
-│           └── tests/
+├── src/main/java
+│   ├── pages
+│   └── utilities
+│
+├── src/test/java
+│   └── tests
 │
 ├── pom.xml
 ├── testng.xml
 └── README.md
+```
 
-## Framework
+## 👨‍💻 Author
 
-The automation framework uses:
-
-- Selenium WebDriver for browser automation
-- Java for programming
-- TestNG for test execution
-- Maven for dependency management
-- Page Object Model for maintaining page-level automation code
-
-## Author
-
-Pravin Khot
+**Pravin Khot**
