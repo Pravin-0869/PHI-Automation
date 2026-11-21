@@ -4,16 +4,18 @@ Automation testing project for the Prudential Health Insurance (PHI) application
 
 ## Tech Stack
 
-- Playwright
-- TypeScript
-- Node.js
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- IntelliJ IDEA
+- ChromeDriver
 - Git
 - GitHub
-- VS Code
 
 ## Project Purpose
 
-This project is created to automate functional and regression testing of the PHI application.
+This project is created to automate functional and regression testing of the PHI application using Selenium WebDriver with Java.
 
 ## Testing Areas
 
@@ -36,12 +38,25 @@ The project follows the Page Object Model (POM) approach.
 
 ### Main Components
 
-- Tests
+- Test Classes
 - Page Objects
 - Test Data
 - Utilities
+- TestNG
+- Maven
 - Configuration
 - Reports
+
+## Prerequisites
+
+Make sure the following are installed:
+
+- Java JDK
+- Maven
+- IntelliJ IDEA
+- Google Chrome
+- ChromeDriver
+- Git
 
 ## Installation
 
@@ -53,51 +68,49 @@ Go to the project folder:
 
 cd PHI-Automation
 
-Install dependencies:
+Install Maven dependencies:
 
-npm install
-
-Install Playwright browsers:
-
-npx playwright install
+mvn clean install
 
 ## Run Tests
 
-Run all tests:
+Run all tests using Maven:
 
-npx playwright test
+mvn test
 
-Run tests with browser visible:
+Run tests from IntelliJ IDEA using TestNG.
 
-npx playwright test --headed
+## Test Reports
 
-Run a specific test:
-
-npx playwright test tests/login.spec.ts
-
-## Test Report
-
-After execution, generate/view the Playwright report:
-
-npx playwright show-report
+Test execution reports can be generated after the test execution depending on the reporting configuration used in the project.
 
 ## Project Structure
 
 PHI-Automation/
 │
-├── tests/
-│   └── *.spec.ts
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── pages/
+│   │       └── utilities/
+│   │
+│   └── test/
+│       └── java/
+│           └── tests/
 │
-├── pages/
-│   └── *.page.ts
-│
-├── test-data/
-│
-├── utils/
-│
-├── playwright.config.ts
-├── package.json
+├── pom.xml
+├── testng.xml
 └── README.md
+
+## Framework
+
+The automation framework uses:
+
+- Selenium WebDriver for browser automation
+- Java for programming
+- TestNG for test execution
+- Maven for dependency management
+- Page Object Model for maintaining page-level automation code
 
 ## Author
 
